@@ -69,7 +69,7 @@ const AssignStudent = () => {
                 {`${student.firstName} ${student.lastName}`}
             </div>
             <div>
-                <div className="text-xl flex flex-row justify-center align-center py-6 font-semibold text-gray-500">Select Mentor to Assign</div>
+                <div className="text-xl flex flex-row justify-center align-center py-6 font-semibold text-gray-500">Select Mentor To Assign</div>
                 <Select options={mentorOptions} className="mx-28" onChange={(e) => handleChange(e)} />
             </div>
             <div className="flex flex-row gap-6 justify-center
