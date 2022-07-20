@@ -1,7 +1,7 @@
 
 const studentsData = [
     {
-        id: 1,
+        id: 0,
         firstName: "vinod",
         lastName: "kotagiri",
         email: "vinodkotagiri@icloud.com",
@@ -11,7 +11,7 @@ const studentsData = [
         assignedMentor: ""
     },
     {
-        id: 2,
+        id: 1,
         firstName: "Tery",
         lastName: "Smith",
         email: "terysmith@gmail.com",
@@ -21,7 +21,7 @@ const studentsData = [
         assignedMentor: ""
     },
     {
-        id: 3,
+        id: 2,
         firstName: "Sheldon",
         lastName: "Cooper",
         email: "sheldon@gmail.com",
@@ -31,7 +31,7 @@ const studentsData = [
         assignedMentor: ""
     },
     {
-        id: 4,
+        id: 3,
         firstName: "Tom",
         lastName: "Quigmer",
         email: "tom@icloud.com",
@@ -41,7 +41,7 @@ const studentsData = [
         assignedMentor: ""
     },
     {
-        id: 5,
+        id: 4,
         firstName: "Sheela",
         lastName: "Sharma",
         email: "Sheela@gmail.com",
@@ -51,7 +51,7 @@ const studentsData = [
         assignedMentor: ""
     },
     {
-        id: 6,
+        id: 5,
         firstName: "Ramya",
         lastName: "Reddy",
         email: "ramysa@gmail.com",

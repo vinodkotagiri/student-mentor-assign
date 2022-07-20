@@ -1,5 +1,5 @@
 import { React, createContext, useState } from 'react'
-import { Sidebar, Dashboard, Students, Mentors, AddStudent, AddMentor, EditStudent, EditMentor, Assign } from './components'
+import { Sidebar, Dashboard, Students, Mentors, AddStudent, AddMentor, EditStudent, EditMentor, Assign, AssignStudent, AssignMentor } from './components'
 import { Routes, Route } from 'react-router-dom'
 import studentsData from './app/data/students.data'
 import mentorsData from './app/data/mentors.data'
@@ -21,6 +21,8 @@ const App = () => {
                     <Route path="/edit-student/:id" element={<EditStudent />} />
                     <Route path="/edit-mentor/:id" element={<EditMentor />} />
                     <Route path="/assign" element={<Assign />} />
+                    <Route path="/assign-student/:id" element={<AssignStudent />} />
+                    <Route path="/assign-mentor/:id" element={<AssignMentor />} />
                 </Routes>
             </div>
         </Usercontext.Provider>

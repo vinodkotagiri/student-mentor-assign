@@ -7,6 +7,7 @@ const AddStudent = () => {
     const context = useContext(Usercontext)
     const { students, setStudents } = context
 
+    const [id, setId] = useState(students[students.length - 1].id + 1)
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
     const [email, setEmail] = useState('')
@@ -16,16 +17,16 @@ const AddStudent = () => {
     const [assignedMentor] = useState('')
 
     const handleSave = () => {
-        const data = { firstName, lastName, email, phone, location, isMentorAssigned, assignedMentor }
+        const data = { id, firstName, lastName, email, phone, location, isMentorAssigned, assignedMentor }
+        setId(prev => prev + 1)
         const student = [...students, data]
         setStudents(student)
-        console.log(students)
+        navigate("/students")
     }
-
     return (
         <div className="w-full">
             <div className="flex flex-row justify-center h-20 bg-blue-400 text-white text-3xl font-semibold capitalize p-6">
-                add stundent
+                add student
             </div>
             <form className="w-full max-w-lg ml-20 mt-20">
                 <div className="flex items-center border-b border-teal-500 py-2">
@@ -42,7 +43,7 @@ const AddStudent = () => {
                     <input className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Location" aria-label="Location" onChange={(e) => setLocation(e.target.value)} />
                 </div>
                 <div className="flex items-center justify-center mt-6 py-2">
-                    <button className="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="button" onClick={handleSave()}>
+                    <button className="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="button" onClick={() => handleSave()}>
                         Add
                     </button>
                     <button className="flex-shrink-0 border-transparent border-4 text-teal-500 hover:text-teal-800 text-sm py-1 px-2 rounded" type="button" onClick={() => navigate("/")}>

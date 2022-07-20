@@ -1,6 +1,6 @@
 const mentorsData = [
     {
-        id: 1,
+        id: 0,
         firstName: "Terrill",
         lastName: "Hills",
         email: "terry@icloud.com",
@@ -10,7 +10,7 @@ const mentorsData = [
         assignedStudents: []
     },
     {
-        id: 2,
+        id: 1,
         firstName: "Nagarajan",
         lastName: "B",
         email: "naharajan@icloud.com",
@@ -20,7 +20,7 @@ const mentorsData = [
         assignedStudents: []
     },
     {
-        id: 3,
+        id: 2,
         firstName: "Arjun",
         lastName: "Reddy",
         email: "arjun@icloud.com",
@@ -30,14 +30,14 @@ const mentorsData = [
         assignedStudents: []
     },
     {
-        id: 4,
+        id: 3,
         firstName: "Ram",
         lastName: "Charan",
         email: "ram@gmail.com",
         phone: "7788986789",
         location: "Banglore",
         areStudentsAssigned: false,
-        assignedStudents: []
+        assignedStudents: ["rakesh"]
     },
 ]
 export default mentorsData

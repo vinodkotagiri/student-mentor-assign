@@ -11,7 +11,7 @@ const Sidebar = () => {
 
             {/* Brand  */}
             <Link to="/">
-                <div div className="flex w-1/4flex-row justify-start items-center m-2 p-3 hover:cursor-pointer">
+                <div className="flex w-1/4flex-row justify-start items-center m-2 p-3 hover:cursor-pointer">
                     <MdAdminPanelSettings size={40} />
                     <div className="text-3xl font-bold">Admin</div>
                 </div >
