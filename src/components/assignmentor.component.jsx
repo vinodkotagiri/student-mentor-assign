@@ -1,4 +1,4 @@
-import { React, useContext, useState } from 'react'
+import { React, useContext } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import Select from 'react-select'
 import { Usercontext } from '../App'
@@ -7,7 +7,7 @@ const AssignStudent = () => {
     const context = useContext(Usercontext)
     const navigate = useNavigate()
     const { id } = useParams()
-    const { students, mentors, setStudents, setMentors } = context
+    const { students, mentors } = context
     const mentor = mentors[id]
 
     const studentOptions = []
