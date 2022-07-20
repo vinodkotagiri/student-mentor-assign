@@ -2,7 +2,7 @@ import React from 'react'
 import { MdAdminPanelSettings, MdAssignmentTurnedIn } from 'react-icons/md'
 import { IoMdPersonAdd } from 'react-icons/io'
 import { VscPersonAdd } from 'react-icons/vsc'
-import { FaUserEdit } from 'react-icons/fa'
+// import { FaUserEdit } from 'react-icons/fa'
 import { MdOutlineVisibility } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 const Sidebar = () => {
@@ -50,7 +50,7 @@ const Sidebar = () => {
                 </div>
             </Link>
 
-            {/* Edit student */}
+            {/* Edit student
             <Link to="edit-student/:id">
                 <div className="flex flex-row justify-start items-center ml-6 p-1 hover:cursor-pointer">
                     <FaUserEdit size={28} />
@@ -59,12 +59,12 @@ const Sidebar = () => {
             </Link>
 
             {/* Edit Mentor */}
-            <Link to="/edit-mentor/:id">
+            {/* <Link to="/edit-mentor/:id">
                 <div className="flex flex-row justify-start items-center ml-6 p-1 hover:cursor-pointer">
                     <FaUserEdit size={28} />
                     <div className="m-2 text-2xl font-thin capitalize">edit mentor</div>
                 </div>
-            </Link>
+            </Link>  */}
 
             {/* Assign */}
             <Link to="/assign">
